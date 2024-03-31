@@ -29,7 +29,7 @@ x_med = np.linspace(np.min(x), np.max(x), n_full)
 plt.plot(x_med, len(x) * np.exp(-x_med) * comb(len(x)-1, i_med-1) * np.exp(-x_med)**(i_med-1) * (1 - np.exp(-x_med))**(len(x) - i_med),
         color='black', label = 'ЦПТ')   
 
-plt.title('~_med')
+plt.title('Bootstrap для медианы и сравнение его с ЦПТ для медианы')
 plt.xlabel('x', loc='right')
 plt.ylabel('~_P(x)', loc='top')
 plt.grid()

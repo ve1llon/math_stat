@@ -21,6 +21,7 @@ plt.hlines(1, x[-1], x[-1]*1.1, colors='r')
 plt.scatter(x[-1], 1, facecolors='none', edgecolors='r')
 plt.scatter(x[0], cdf[0], color='r')
 
+plt.title('Эмпирическая функция распределения')
 plt.xlabel('x', loc='right')
 plt.xticks(np.arange(0, x[-1]*1.1, 0.2))
 plt.xlim(0, x[-1]*1.1)

@@ -30,7 +30,7 @@ x_mean = np.linspace(mu - 3 * sigma, mu + 3 * sigma, n_full)
 plt.plot(x_mean, stats.norm.pdf(x_mean, mu, sigma), color='black', label = 'ЦПТ')
 
 
-plt.title('~_mean')
+plt.title('Bootstrap для среднего арифметического и сравнение его с ЦПТ для среднего арифметического')
 plt.xlabel('x', loc='right')
 plt.ylabel('~_P(x)', loc='top')
 plt.grid()

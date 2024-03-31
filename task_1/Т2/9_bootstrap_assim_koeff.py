@@ -37,7 +37,7 @@ l = np.max(x_boot_assim) - np.min(x_boot_assim)
 delta = l/k
 print('l, k, delta = ', l, k, delta)
 plt.hist(x_boot_assim, bins = k, density=True, color='y')
-plt.title('~_assimetration koeff')
+plt.title('Bootstrap для коэффициента асимметрии')
 plt.xlabel('x', loc='right')
 plt.ylabel('~_P(x)', loc='top')
 plt.yticks(np.arange(0, 1.05, 0.05))
